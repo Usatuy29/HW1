@@ -1,0 +1,190 @@
+/*boddy styles */
+.page{
+font-family: Roboto;
+background-color: #E5E5E5;
+color: #434455;
+}
+ul{
+list-style: none;
+}
+/* head*/
+.page-header{
+    background-color: #ffffff;
+}
+.logo{
+    text-decoration: none;
+    color: #4D5AE5;
+    Font-family: Raleway;
+    Font-style: ExtraBold;
+    font-size: 18px;    
+    Line-height: 114%;
+    font-weight: 800;
+    cursor: pointer;
+}
+.part-logo{
+    color: #2E2F42;
+} 
+.logo:focus
+.logo:hover {
+    color: black;
+} 
+
+/*site nav*/
+.site-nav .link{
+    text-decoration: none;
+    color: #2E2F42;
+    Font-size: 16px;
+    Line-height: 128%;
+    font-weight: 600;
+    cursor: pointer;
+}
+.site-nav .link:hover,
+.site-nav .link:focus{
+    color: #4D5AE5;
+}
+.site-nav .link:active{
+    color: #4D5AE5;
+}
+/*contacts*/
+.contacts .mail{
+    text-decoration: none;
+    color: #434455;
+    Font-size: 16px;
+    Line-height: 128%;
+    Font-style: Regular;
+    cursor: pointer;
+}
+.contacts .mail:hover,
+.contacts .mail:focus{
+    color: #4D5AE5;
+}
+
+
+/*Main*/
+/*Hero*/
+.hero{
+    background-color: #2E2F42;
+}
+.hero-title{
+    color: #ffffff;
+    font-size: 60px;
+    Line-height: 91%;
+    Font-style: SemiBold;
+    font-weight: 600;
+    font-family: raleway;
+}
+.button{
+    color:#ffffff;
+    background-color: #4D5AE5;
+    Font-style: SemiBold;
+    Font-size: 16sp;
+    Line-height: 100%;
+    font-weight: 600;
+    cursor: pointer;
+}
+.button:hover
+.button:focus{
+    background-color: #4D5AE5;
+}
+/*section */
+.no-title{
+    color: #E5E5E5;
+}
+.content-title{
+    Font-style: SemiBold;
+    color: #2E2F42;
+    Font-size: 16px;
+    Line-height: 128%;
+}
+.content{
+    Font-style: Regular;
+    Font-size: 16px;
+    Line-height: 128%;
+}
+/*What are we doing*/
+.section-title{
+    color: #2E2F42;
+    font-weight: 600;
+    Font-style: SemiBold;
+    Font-size: 36px;
+    Line-height: 95%;
+}
+/*team*/
+.team{
+    background-color: #F4F4FD;
+}
+.name{
+    color: #2E2F42;
+    Font-style: SemiBold;
+    Font-size: 20sp;
+    Line-height: 102%;
+}
+.position{
+    Font-style: Regular;
+    Font-size: 16sp;
+    Line-height: 128%;
+}
+/*footer*/
+footer{
+    background-color: #2E2F42;
+}
+.footer-logo{
+    color: #F4F4FD;
+    Font-family: Raleway;
+    Font-style: ExtraBold;
+    Font-size: 18px;
+    Line-height: 100%;
+}
+.footer-slogan{
+    color: #E7E9FC;
+    Font-style: Regular;
+    Font-size: 16px;
+    Line-height: 128%;
+}
+
+/*Portfolio*/
+.portfolio-body{
+    font-family: Roboto;
+    background-color: #E5E5E5;
+}
+.servises{
+    color: #2E2F42;
+    Font-style: SemiBold;
+    Font-size: 20sp;
+    Line-height: 102%;
+}
+.view{
+    Font-style: Regular;
+    Font-size: 16sp;
+    Line-height: 128%;
+}
+.button-all
+{
+    color: #ffffff;
+    background-color: #4D5AE5;
+    Font-style: SemiBold;
+    font-size: 16sp;
+    Line-height: 128%;
+    cursor: pointer;
+}
+.button-all:hover
+.button-all:focus{
+    color:#ffffff;
+    background-color: #4D5AE5;
+}
+
+
+.button-icon:{
+    color: #4D5AE5;
+    background-color: #F4F4FD;
+    Font-style: SemiBold;
+    Font-size: 16px;
+    Line-height: 128%;
+    cursor: pointer;
+}
+
+.button-icon:focus
+.button-icon:hover{
+    color: #4D5AE5;
+    background-color: #F4F4FD;
+}
