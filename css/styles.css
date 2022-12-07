@@ -1,16 +1,26 @@
 /*boddy styles */
-.page{
-font-family: Roboto;
-background-color: #E5E5E5;
+body{
+font-family: 'Roboto', sans-serif;
+background-color: #ffffff;
 color: #434455;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 ul{
 list-style: none;
 }
 /* head*/
-.page-header{
-    background-color: #ffffff;
-}
 .logo{
     text-decoration: none;
     color: #4D5AE5;
@@ -33,10 +43,10 @@ list-style: none;
 .site-nav .link{
     text-decoration: none;
     color: #2E2F42;
-    Font-size: 16px;
-    Line-height: 128%;
-    font-weight: 600;
-    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.28;
+    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 .site-nav .link:hover,
 .site-nav .link:focus{
@@ -50,8 +60,7 @@ list-style: none;
     text-decoration: none;
     color: #434455;
     Font-size: 16px;
-    Line-height: 128%;
-    Font-style: Regular;
+    Line-height: 1.28;
     cursor: pointer;
 }
 .contacts .mail:hover,
@@ -67,47 +76,45 @@ list-style: none;
 }
 .hero-title{
     color: #ffffff;
-    font-size: 60px;
-    Line-height: 91%;
-    Font-style: SemiBold;
-    font-weight: 600;
-    font-family: raleway;
+    font-size: 56px;
+    line-height: 1.07;
+    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 .button{
     color:#ffffff;
     background-color: #4D5AE5;
-    Font-style: SemiBold;
-    Font-size: 16sp;
+    font-size: 16px;
     Line-height: 100%;
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-family: 'Roboto';
     cursor: pointer;
 }
 .button:hover
 .button:focus{
-    background-color: #4D5AE5;
+    background-color:#404BBF;
+    ;
 }
 /*section */
-.no-title{
-    color: #E5E5E5;
-}
 .content-title{
-    Font-style: SemiBold;
     color: #2E2F42;
-    Font-size: 16px;
-    Line-height: 128%;
+    font-size: 20px;
+    line-height: 1.28;
+    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 .content{
-    Font-style: Regular;
     Font-size: 16px;
-    Line-height: 128%;
+    Line-height: 1.28;
 }
 /*What are we doing*/
 .section-title{
     color: #2E2F42;
-    font-weight: 600;
-    Font-style: SemiBold;
+    font-weight: 700;
     Font-size: 36px;
-    Line-height: 95%;
+    Line-height: 0.95;
+    letter-spacing: 0.02em;
 }
 /*team*/
 .team{
@@ -115,14 +122,15 @@ list-style: none;
 }
 .name{
     color: #2E2F42;
-    Font-style: SemiBold;
-    Font-size: 20sp;
-    Line-height: 102%;
+    Font-size: 20px;
+    Line-height: 1.02;
+    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 .position{
-    Font-style: Regular;
-    Font-size: 16sp;
-    Line-height: 128%;
+    Font-size: 16px;
+    Line-height: 1.28;
+    letter-spacing: 0.02em;
 }
 /*footer*/
 footer{
@@ -131,55 +139,56 @@ footer{
 .footer-logo{
     color: #F4F4FD;
     Font-family: Raleway;
-    Font-style: ExtraBold;
     Font-size: 18px;
-    Line-height: 100%;
+    Line-height: 1;
 }
 .footer-slogan{
     color: #E7E9FC;
-    Font-style: Regular;
     Font-size: 16px;
-    Line-height: 128%;
+    Line-height: 1.28;
+    letter-spacing: 0.02em;
 }
 
 /*Portfolio*/
-.portfolio-body{
-    font-family: Roboto;
-    background-color: #E5E5E5;
-}
 .servises{
     color: #2E2F42;
-    Font-style: SemiBold;
     Font-size: 20sp;
-    Line-height: 102%;
+    Line-height: 1.02;
+    font-weight: 700;
+    letter-spacing: 0.02em;
 }
 .view{
-    Font-style: Regular;
     Font-size: 16sp;
-    Line-height: 128%;
+    Line-height: 1.28;
+    letter-spacing: 0.02em;
 }
 .button-all
 {
+    font-style: 'Roboto';
     color: #ffffff;
     background-color: #4D5AE5;
-    Font-style: SemiBold;
-    font-size: 16sp;
-    Line-height: 128%;
+    font-size: 16px;
+    Line-height: 1.28;
+    font-weight: 700;
+    letter-spacing: 0.04em;
     cursor: pointer;
 }
 .button-all:hover
 .button-all:focus{
     color:#ffffff;
-    background-color: #4D5AE5;
+    background-color: #404BBF;
 }
 
 
-.button-icon:{
+.button-icon{
+    font-style: 'Roboto';
     color: #4D5AE5;
     background-color: #F4F4FD;
-    Font-style: SemiBold;
     Font-size: 16px;
-    Line-height: 128%;
+    Line-height: 1.28;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+
     cursor: pointer;
 }
 
