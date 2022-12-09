@@ -27,7 +27,7 @@ list-style: none;
     Font-family: Raleway;
     Font-style: ExtraBold;
     font-size: 18px;    
-    Line-height: 114%;
+    Line-height: 1.14;
     font-weight: 800;
     cursor: pointer;
 }
@@ -55,6 +55,8 @@ list-style: none;
 .site-nav .link:active{
     color: #4D5AE5;
 }
+.site-nav .link.current{
+    color: #4D5AE5;}
 /*contacts*/
 .contacts .mail{
     text-decoration: none;
@@ -85,7 +87,7 @@ list-style: none;
     color:#ffffff;
     background-color: #4D5AE5;
     font-size: 16px;
-    Line-height: 100%;
+    Line-height: 1.28;
     font-weight: 700;
     letter-spacing: 0.04em;
     font-family: 'Roboto';
@@ -107,6 +109,7 @@ list-style: none;
 .content{
     Font-size: 16px;
     Line-height: 1.28;
+    letter-spacing: 0.02em;
 }
 /*What are we doing*/
 .section-title{
@@ -152,34 +155,16 @@ footer{
 /*Portfolio*/
 .servises{
     color: #2E2F42;
-    Font-size: 20sp;
+    Font-size: 20px;
     Line-height: 1.02;
     font-weight: 700;
     letter-spacing: 0.02em;
 }
 .view{
-    Font-size: 16sp;
+    Font-size: 16px;
     Line-height: 1.28;
     letter-spacing: 0.02em;
 }
-.button-all
-{
-    font-style: 'Roboto';
-    color: #ffffff;
-    background-color: #4D5AE5;
-    font-size: 16px;
-    Line-height: 1.28;
-    font-weight: 700;
-    letter-spacing: 0.04em;
-    cursor: pointer;
-}
-.button-all:hover
-.button-all:focus{
-    color:#ffffff;
-    background-color: #404BBF;
-}
-
-
 .button-icon{
     font-style: 'Roboto';
     color: #4D5AE5;
@@ -188,12 +173,11 @@ footer{
     Line-height: 1.28;
     font-weight: 700;
     letter-spacing: 0.04em;
-
     cursor: pointer;
 }
 
 .button-icon:focus
 .button-icon:hover{
-    color: #4D5AE5;
-    background-color: #F4F4FD;
+    color: #F4F4FD;
+    background-color: #404BBF;
 }
