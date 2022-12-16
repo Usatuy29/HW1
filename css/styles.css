@@ -1,8 +1,30 @@
 /*boddy styles */
+:root{
+    --primary-brand:#4d5ae5;
+    --dark:#2e2f42;
+    --success:#31d0aa;
+    --text:#434455;
+    --subtle-text:#8e8f99;
+    --acent:#e7e9fc;
+    --light:#f4f4fd;
+    --button-active:#404bbf;
+    --white-text-color:#ffffff;
+
+    --main-font: Roboto, sans-serif;
+    --seconary-font: Raleway, sans-serif;
+}
+html{
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
 body{
-font-family: 'Roboto', sans-serif;
-background-color: #ffffff;
-color: #434455;
+font-family: var(--main-font);
+background-color: var(--white-text-color);
+color: var(--text);
 }
 .visually-hidden {
     position: absolute;
@@ -20,16 +42,37 @@ color: #434455;
 ul{
 list-style: none;
 }
+h1,
+h2,
+h3,
+h4,
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.conteiner{
+    width: 1158px;
+    margin: 0 auto;
+
+}
 /* head*/
+.page-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+}
 .logo{
     text-decoration: none;
     color: #4D5AE5;
     Font-family: Raleway;
-    Font-style: ExtraBold;
     font-size: 18px;    
     Line-height: 1.14;
     font-weight: 800;
     cursor: pointer;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    
 }
 .part-logo{
     color: #2E2F42;
@@ -40,6 +83,19 @@ list-style: none;
 } 
 
 /*site nav*/
+.site-nav{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 77px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 261px;
+    
+}
 .site-nav .link{
     text-decoration: none;
     color: #2E2F42;
@@ -58,6 +114,17 @@ list-style: none;
 .site-nav .link.current{
     color: #4D5AE5;}
 /*contacts*/
+.contacts{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 331px; 
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 344px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .contacts .mail{
     text-decoration: none;
     color: #434455;
@@ -74,7 +141,10 @@ list-style: none;
 /*Main*/
 /*Hero*/
 .hero{
-    background-color: #2E2F42;
+    background-color:var(--dark);
+    text-align: center;
+    padding-top: 192px;
+    
 }
 .hero-title{
     color: #ffffff;
@@ -82,6 +152,10 @@ list-style: none;
     line-height: 1.07;
     font-weight: 700;
     letter-spacing: 0.02em;
+    margin-right: auto;
+    margin-left: auto;
+    
+    max-width: 492px;
 }
 .button{
     color:#ffffff;
@@ -92,6 +166,11 @@ list-style: none;
     letter-spacing: 0.04em;
     font-family: 'Roboto';
     cursor: pointer;
+    padding: 16px 32px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin-top: 48px;
+    margin-bottom: 192px;
 }
 .button:hover
 .button:focus{
@@ -99,17 +178,29 @@ list-style: none;
     ;
 }
 /*section */
+.content-list{
+    display: flex;
+    margin-top: 120px;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+
+}
+
 .content-title{
     color: #2E2F42;
     font-size: 20px;
     line-height: 1.28;
     font-weight: 700;
     letter-spacing: 0.02em;
+    width: 264px;
 }
 .content{
     Font-size: 16px;
     Line-height: 1.28;
     letter-spacing: 0.02em;
+    width: 264px;
 }
 /*What are we doing*/
 .section-title{
@@ -118,10 +209,36 @@ list-style: none;
     Font-size: 36px;
     Line-height: 0.95;
     letter-spacing: 0.02em;
+    text-align: center;
+    padding-top: 120px;  
+}
+.section-item{
+    margin-top: 72px;
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+
+
 }
 /*team*/
+.team-list{
+    margin-top: 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 0;
+    
+}
+.team-card{
+    background-color:var(--white-text-color) ;
+}
 .team{
     background-color: #F4F4FD;
+    padding-bottom: 120px;
+    
 }
 .name{
     color: #2E2F42;
@@ -129,44 +246,64 @@ list-style: none;
     Line-height: 1.02;
     font-weight: 700;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 32px;
 }
 .position{
     Font-size: 16px;
     Line-height: 1.28;
     letter-spacing: 0.02em;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 32px;
 }
 /*footer*/
 footer{
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
-.footer-logo{
+.footer-logo{   
+     text-decoration: none;
+    color: #4D5AE5;
+    Font-family: Raleway;
+    font-size: 18px;    
+    Line-height: 1.14;
+    font-weight: 800;
+    cursor: pointer;
+    
+}
+.logo-end{
     color: #F4F4FD;
     Font-family: Raleway;
     Font-size: 18px;
     Line-height: 1;
+
 }
 .footer-slogan{
+    font-weight:400;
     color: #E7E9FC;
     Font-size: 16px;
-    Line-height: 1.28;
+    Line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-top: 16px;
+    max-width: 264px;
 }
 
 /*Portfolio*/
-.servises{
-    color: #2E2F42;
-    Font-size: 20px;
-    Line-height: 1.02;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-}
-.view{
-    Font-size: 16px;
-    Line-height: 1.28;
-    letter-spacing: 0.02em;
+.portfolio-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 586px;
+    margin-top: 96px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
 }
 .button-icon{
-    font-style: 'Roboto';
+    font-family:'Roboto';
     color: #4D5AE5;
     background-color: #F4F4FD;
     Font-size: 16px;
@@ -174,10 +311,42 @@ footer{
     font-weight: 700;
     letter-spacing: 0.04em;
     cursor: pointer;
+    padding: 12px 24px;
+    border: 1px solid transparent;
+    border-radius: 5px;
 }
-
-.button-icon:focus
-.button-icon:hover{
+.button-icon:focus,
+.button-icon:hover
+{
     color: #F4F4FD;
     background-color: #404BBF;
 }
+/*services section*/
+.servises-list{
+margin-top: 72px;
+margin-bottom: 120px;
+padding-left: 0;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+row-gap: 48px;
+column-gap: 24px;
+
+}
+.servises{
+    color: #2E2F42;
+    Font-size: 20px;
+    Line-height: 1.02;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-left: 8px;
+    margin-top:32px ;
+}
+.view{
+    Font-size: 16px;
+    Line-height: 1.28;
+    letter-spacing: 0.02em;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+
